@@ -8,6 +8,9 @@ sources:
         columns:
           - name: date_date
           - name: orders_id
+            tests: 
+              - unique
+              - not_null
           - name: products_id 
           - name: revenue
           - name: quantity
@@ -16,12 +19,18 @@ sources:
         description: products of Greenweez
         columns:
           - name: products_id
+            tests: 
+              - unique
+              - not_null
           - name: purchase_price
         identifier: raw_gz_product
       - name: ship
         description: orders id, shipping_fee et ship_cost of Greenwwwz
         columns:
           - name: orders_id
+            tests: 
+              - unique
+              - not_null
           - name: shipping_fee
           - name: logcost
           - name: ship_cost
