@@ -9,11 +9,11 @@ sources:
         description: sales of Greenweez / we have on row per product_id found in each orders_id
         tests:
           - unique:
-              column_name: "(products_id || '_' || orders_id)"
+              column_name: "(pdt_id || '_' || orders_id)"
         columns:
           - name: date_date
           - name: orders_id
-          - name: products_id 
+          - name: pdt_id 
           - name: revenue
           - name: quantity
       - name: product
