@@ -4,8 +4,25 @@ sources:
     schema: gz_raw_data
     tables:
       - name: sales
+        description: sales of Greenweez / we have on row per product_id found in each orders_id
+        columns:
+          - name: date_date
+          - name: orders_id
+          - name: products_id 
+          - name: revenue
+          - name: quantity
         identifier: raw_gz_sales
       - name: product
+        description: products of Greenweez
+        columns:
+          - name: products_id
+          - name: purchase_price
         identifier: raw_gz_product
       - name: ship
+        description: orders id, shipping_fee et ship_cost of Greenwwwz
+        columns:
+          - name: orders_id
+          - name: shipping_fee
+          - name: logcost
+          - name: ship_cost
         identifier: raw_gz_ship
