@@ -1,0 +1,8 @@
+version: 2
+
+sources: 
+  - name: unified-surfer-448410-m6 
+    tables:
+      - name: raw_gz_sales
+      - name: raw_gz_product
+      - name: raw_gz_ship
