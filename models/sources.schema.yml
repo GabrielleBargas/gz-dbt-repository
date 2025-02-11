@@ -1,22 +1,23 @@
 version: 2
+
 sources:
   - name: raw
     schema: gz_raw_data
     tables:
       - name: sales
+        identifier: raw_gz_sales
         description: sales of Greenweez / we have on row per product_id found in each orders_id
+        tests:
+          - unique:
+              column_name: "(products_id || '_' || orders_id)"
         columns:
           - name: date_date
           - name: orders_id
-          - name: primary_key
-            tests: 
-              - unique
-              - not_null
           - name: products_id 
           - name: revenue
           - name: quantity
-        identifier: raw_gz_sales
       - name: product
+        identifier: raw_gz_product
         description: products of Greenweez
         columns:
           - name: products_id
@@ -24,8 +25,8 @@ sources:
               - unique
               - not_null
           - name: purchase_price
-        identifier: raw_gz_product
       - name: ship
+        identifier: raw_gz_ship
         description: orders id, shipping_fee et ship_cost of Greenwwwz
         columns:
           - name: orders_id
@@ -35,4 +36,3 @@ sources:
           - name: shipping_fee
           - name: logcost
           - name: ship_cost
-        identifier: raw_gz_ship
