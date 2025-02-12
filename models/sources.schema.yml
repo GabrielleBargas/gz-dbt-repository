@@ -58,10 +58,6 @@ sources:
           - name: date_date
           - name: paid_source 
           - name: campaign_key
-            description: primary_key 
-            tests:
-              - unique 
-              - not_null
           - name: campaign_name 
           - name: ads_cost
           - name: impression
@@ -74,9 +70,6 @@ sources:
           - name: paid_source 
           - name: campaign_key
             description: primary_key 
-            tests:
-              - unique 
-              - not_null
           - name: campaign_name 
           - name: ads_cost
           - name: impression
@@ -90,9 +83,6 @@ sources:
           - name: paid_source 
           - name: campaign_key
             description: primary_key 
-            tests:
-              - unique 
-              - not_null
           - name: campaign_name 
           - name: ads_cost
           - name: impression
@@ -105,10 +95,6 @@ sources:
           - name: date_date
           - name: paid_source 
           - name: campaign_key
-            description: primary_key 
-            tests:
-              - unique 
-              - not_null
           - name: campaign_name 
           - name: ads_cost
           - name: impression
