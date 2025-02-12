@@ -36,10 +36,9 @@ clean-targets:         # directories to be removed by `dbt clean`
 # using the `{{ config(...) }}` macro.
 
 models:
-  finance:
   mart:
+    finance:
     # Applies to all files under models/example/
-      +materialized: table
-      finance:
-        +schema: dbt_gabrielle_finance
+      +schema: dbt_gabrielle_finance
+      +materialized: "table" 
 
