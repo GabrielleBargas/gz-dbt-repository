@@ -49,3 +49,23 @@ sources:
              description: the cost of preparing the parcel in the distribution centre/warehouse
            - name: ship_cost
              description: shipping cost paid by Greenweez to the carrier/
+
+#2
+       - name: adwords
+         identifier: raw_gz_adwords
+         description: campaign adwords
+      
+       - name: bing
+         identifier: raw_gz_bing
+         description: campaign bing
+
+       - name: criteo
+         identifier: raw_gz_criteo
+         description: campaign criteo
+
+       - name: facebook
+         identifier: raw_gz_facebook
+         description: campaign facebook
+         
+         
+         
